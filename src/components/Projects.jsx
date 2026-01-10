@@ -3,6 +3,7 @@ import projeto1Img from '../assets/img/projects/meu-projeto-1.png'
 import projeto2Img from '../assets/img/projects/meu-projeto-2.png'
 import projeto3Img from '../assets/img/projects/meu-projeto-3.png'
 import projeto4Img from '../assets/img/projects/meu-projeto-4.png'  
+import { MdLayers } from "react-icons/md";
 import { FaBootstrap, FaCss3Alt, FaHtml5, FaJsSquare, FaReact } from 'react-icons/fa'
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
 
@@ -115,7 +116,7 @@ export function Projects(){
   </div>
   <div className="flex gap-3 justify-center text-purple-300 text-xl">
     <SiNextdotjs />
-    <SiTailwindcss/>
+    <MdLayers/>
   </div>
 </div>
 
