@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 import curriculoDownload from "../assets/curriculo/curriculo-brendha-rodrigues.pdf";
 import vetor from "../assets/img/icons/vetor-hero.png";
 
@@ -50,7 +51,11 @@ export function Hero() {
           </div>
 
           {/* network */}
-          <div></div>
+          <div className="flex justify-center gap-4 mt-8 ">
+            <a href="https://github.com/brendhaed" className="bg-[#333333] px-5 py-5 rounded-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)]"><FaGithub className="text-white md:text-2xl"/></a>
+            <a href="https://www.linkedin.com/in/brendhaed" className="bg-[#333333] px-5 py-5 rounded-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)]"><FaLinkedin className="text-white md:text-2xl"/></a>
+            <a href="mailto:brendhaed@outlook.com" className="bg-[#333333] px-5 py-5 rounded-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)]"><FaEnvelope className="text-white md:text-2xl"/></a>
+          </div>
         </div>
       </section>
       
