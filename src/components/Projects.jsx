@@ -9,16 +9,16 @@ import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
 
 export function Projects(){
     return(
-    <section id="projetos"className="px-8 md:px-20 py-16 bg-[#1b1325]">
+    <section id="projetos"className="px-8 md:px-20 py-16 bg-[#242424]">
     <div className="w-full text-center mb-12">
-    <h3 className="text-[#64ffda] tracking-wide text-sm mb-2">Projetos</h3>
+    <h3 className="text-[#FFD67D] tracking-wide text-sm mb-2">Projetos</h3>
     <h1 className="text-3xl md:text-4xl font-bold text-white">Dê uma olha nos meus projetos</h1>
   </div>
 
   <div className="grid gap-10 md:grid-cols-3 justify-items-center">
 
   {/* Card 1  */}
-  <div className="bg-[#2b1e42] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
+  <div className="bg-[#1e162c] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
   <div className="relative mb-4">
   <img src={projeto1Img} alt="Foto projeto 1" className="rounded w-full"/>
   <a href="https://github.com/brendhaed/sistema-web-minimercado" target="_blank"
@@ -45,7 +45,7 @@ export function Projects(){
 </div>
 
   {/* Card 2  */}
-    <div className="bg-[#2b1e42] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
+    <div className="bg-[#1e162c] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
   <div className="relative mb-4">
   <img src={projeto2Img} alt="Foto projeto 2" className="rounded w-full"/>
   <a href="https://github.com/brendhaed/projeto-previsao-do-tempo" target="_blank"
@@ -71,7 +71,7 @@ export function Projects(){
 </div>
 
   {/* Card 3  */}
-  <div className="bg-[#2b1e42] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
+  <div className="bg-[#1e162c] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
   <div className="relative mb-4">
   <img src={projeto3Img} alt="Foto projeto 3" className="rounded w-full"/>
   <a href="https://github.com/brendhaed/landing-page-schoolTech" target="_blank"
@@ -96,7 +96,7 @@ export function Projects(){
 </div>
 
   {/* Card 4  */}
-  <div className="bg-[#2b1e42] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
+  <div className="bg-[#1e162c] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
   <div className="relative mb-4">
   <img src={projeto4Img} alt="Foto projeto 4" className="rounded w-full"/>
   <a href="https://github.com/brendhaed/crud-series-next" target="_blank"

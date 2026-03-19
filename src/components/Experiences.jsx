@@ -1,8 +1,8 @@
 
 export function Experiences(){
     return(
-    <section id="experiencias" className="max-w-3xl mx-auto p-8">
-    <h1 className="text-[#64ffda] text-sm mb-10 text-center w-full">Experiências</h1>
+    <section id="experiencias" className="max-w-3xl mx-auto p-8 ">
+    <h1 className="text-[#FFD67D] text-sm mb-10 text-center w-full">Experiências</h1>
     <div className="relative border-l-4 border-purple-600 ml-4">
 
      {/* Item 1  */}

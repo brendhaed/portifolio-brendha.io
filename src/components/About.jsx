@@ -6,7 +6,7 @@ import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 export function About(){
     return(
          <>
-         <section id="sobre"className="bg-[#2b1e42] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white">
+         <section id="sobre"className="bg-[#242424] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white">
          <div className="w-full md:w-1/2 flex justify-center">
          <img src={imgPerfil} alt="Foto perfil" className="w-50 h-50 rounded-full"/>
          </div>
@@ -26,7 +26,7 @@ export function About(){
             <i className="fa-brands fa-python"></i>
         </div>
     
-    <h3 className="text-[#64ffda] text-sm mb-10">Sobre mim</h3>
+    <h3 className="text-[#FFD67D] text-sm mb-10">Sobre mim</h3>
     <h2 className="text-xl md:text-2xl font-bold mb-4">
       Sou uma desenvolvedora de software em busca da minha primeira oportunidade de trabalho.
     </h2>

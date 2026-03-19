@@ -2,7 +2,7 @@
 export function Header() {
     return (
        <>
-       <header className="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-[#1b1325]">
+       <header className="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-[#242424]">
         <h1 className="text-xl font-semibold text-white">&lt;brendhaed/&gt;</h1>
 
    {/* Menu Desktop  */}

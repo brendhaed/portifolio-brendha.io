@@ -1,8 +1,8 @@
 
 export function Education(){
     return(
-    <section id="educacao" className="bg-[#2b1e42] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 text-white">
-    <h1 className="text-[#64ffda] text-sm mb-10 text-center w-full">Formação acadêmica</h1>
+    <section id="educacao" className="bg-[#242424] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 text-white">
+    <h1 className="text-[#FFD67D] text-sm mb-10 text-center w-full">Formação acadêmica</h1>
 
   <div className="flex flex-col md:flex-row items-center gap-10">
     <div className="w-full md:w-1/2">
