@@ -71,7 +71,7 @@ export function Contact() {
     <div className="md:w-1/2 text-center md:text-left">
       <img src={imgPerfil} alt="Foto Perfil" className="w-24 h-24 mx-auto md:mx-0 rounded-full border-4 border-white mb-4"/>
 
-      <h4 className="text-sm text-purple-400 mb-1">Contato</h4>
+      <h4 className="text-sm text-[#FFD67D] mb-1">Contato</h4>
       <h2 className="text-xl font-semibold mb-4">Gostou do meu trabalho? Entre em contato!</h2>
 
       <p className="text-sm text-gray-300 mb-4">

@@ -1,5 +1,24 @@
+import { useState } from "react";
 import imgLogo from "../assets/img/icons/logo-nome.png";
+import { MdOutlineLightMode, MdOutlineDarkMode} from "react-icons/md";
+
 export function Header() {
+  const [theme, setTheme] = useState("dark");
+  const [lightColor, setlightColor] = useState("white");
+  const [darkColor, setDarkColor] = useState("black");
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+      setlightColor("black");
+      setDarkColor("white");
+    } else {
+      setTheme("light");
+      setlightColor("white");
+      setDarkColor("black");
+    }
+  };
+  
   return (
     <>
       <header className="fixed top-0 w-full z-50 flex justify-center md:justify-between items-center px-8 py-2 bg-[#242424]">
@@ -28,6 +47,17 @@ export function Header() {
             Contato
           </a>
         </nav>
+
+        {/* Theme */}
+        <div>
+          <button onClick={toggleTheme} className="cursor-pointer">
+            {theme === "light" ? (
+              <MdOutlineDarkMode className="text-white text-2xl" />
+            ) : (
+              <MdOutlineLightMode className="text-white text-2xl" />
+            )}
+          </button>
+        </div>
 
         {/* Botão Menu Mobile  */}
         <button id="menu-toggle" className="text-white text-2xl md:hidden">

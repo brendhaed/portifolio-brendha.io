@@ -1,7 +1,9 @@
+import cv from '../data/cv.json';
 import imgPerfil from '../assets/img/foto-perfil/foto-perfil.png';
 import curriculoDownload from '../assets/curriculo/curriculo-brendha-rodrigues.pdf';
 import { FaBootstrap, FaCss3Alt, FaGitAlt, FaHtml5, FaJs, FaReact } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+
 
 export function About(){
     return(
@@ -28,14 +30,11 @@ export function About(){
     
     <h3 className="text-[#FFD67D] text-sm mb-10">Sobre mim</h3>
     <h2 className="text-xl md:text-2xl font-bold mb-4">
-      Sou uma desenvolvedora de software em busca da minha primeira oportunidade de trabalho.
+      {cv.about.title}
     </h2>
 
     <p className="text-sm text-gray-300 leading-relaxed mb-6">
-      Além de programar, sou apaixonada por café, gatos e por explorar novos lugares no meu tempo
-      livre. Estou em busca de uma oportunidade para aplicar minhas habilidades e todo meu 
-      entusiasmo em uma empresa de tecnologia, contribuindo ativamente para o crescimento dos 
-      projetos e também para o meu desenvolvimento profissional.
+      {cv.about.description}
     </p>
 
     <div className="flex justify-center">

@@ -1,0 +1,74 @@
+{
+  "name": "Brendha E. Rodrigues",
+  "title": "Desenvolvedora Front-End",
+  "summary": "Desenvolvedora Front-End com foco em React e construção de interfaces modernas e responsivas. Tenho experiência sólida com HTML, CSS e JavaScript, além de estar em constante evolução no desenvolvimento fullstack, aplicando boas práticas e criando projetos práticos voltados ao mercado.",
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Tailwind",
+    "Git",
+    "Figma"
+  ],
+  "about": {
+  "title": "Sou uma desenvolvedora de software em busca da minha primeira oportunidade de trabalho.",
+  "description": "Sou uma pessoa dedicada, apaixonada por tecnologia e sempre em busca de aprender e crescer profissionalmente. Tenho experiência prática em projetos pessoais e acadêmicos, onde desenvolvi habilidades sólidas em desenvolvimento front-end, especialmente com React. Estou ansiosa para aplicar meus conhecimentos e contribuir para o sucesso de uma equipe de desenvolvimento, enquanto continuo a expandir minhas habilidades e conhecimentos na área de tecnologia."
+},
+  "contact": [
+    {
+        "github": "https://github.com/brendhaed",
+        "linkedin": "https://www.linkedin.com/in/brendhaed/",
+        "email": "brendhaed@outlook.com",
+        "phone": "(55) 99104-9932"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Projeto de sistema web - Minimercado",
+      "description": "Projeto que desenvolvi para a disciplina de Fundamentos de Sistemas Web.",
+      "data": "Maio 2025 - Junho 2025",
+      "techs": ["HTML", "CSS", "JavaScript"],
+      "link": "https://brendhaed.github.io/sistema-web-minimercado/",
+      "repository": "https://github.com/brendhaed/sistema-web-minimercado"
+    },
+    {
+      "name": "Projeto Landing Page Escola Tech",
+      "description": "Projeto de uma landing page para a Escola Tech.",
+      "data": "Setembro 2025 - Outubro 2025",
+      "techs": ["Next.js", "Tailwind", "Figma"],
+      "link": "https://landing-page-school-tech.vercel.app/",
+      "repository": "https://github.com/brendhaed/landing-page-schoolTech"
+    },
+    {
+      "name": "Projeto CRUD de Séries",
+      "description": "Projeto que desenvolvi na Disciplina de Desenvolvimento Front-end",
+      "data": "Novembro 2025 - Janeiro 2026",
+      "techs": ["Next.js", "Tailwind"],
+      "link": "https://crud-series-next.vercel.app/",
+      "repository": "https://github.com/brendhaed/crud-series-next"
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Estagiaria de TI",
+      "period": "Mar/2022 - Set/2022",
+      "description": "Estágio obrigatório do curso de Técnico em Informática. Onde realizei o desenvolvimento e manutenção de consultas SQL, com foco na otimização de buscas e melhoria de desempenho em banco de dados PostgreSQL.Suporte na modelagem de dados, criação de procedures, views e rotinas automatizadas. Análise e resolução de problemas relacionados à integridade e performance do banco de dados."
+    }
+  ],
+  "education": [
+    {
+      "course": "Análise e Desenvolvimento de Sistemas",
+      "institution": "Pontifícia Universidade Católica do Rio Grande do Sul(PUC-RS)",
+      "period": "2024 - 2027",
+      "situation": "Cursando 3º semestre"
+    },
+    {
+      "course": "Técnico em Informática",
+      "institution": "ETE 25 de Julho",
+      "period": "2020 - 2022",
+      "situation": "Concluído"
+    }
+  ]
+}

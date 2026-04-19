@@ -1,0 +1,23 @@
+
+:root{
+    /* cores principais */
+  --color-primary: #6c63ff;
+  --color-secondary: #a855f7;
+
+  /* texto */
+  --color-text: #ffffff;
+  --color-primary: #9955E8;
+  --color-text-muted: #a1a1aa;
+
+  /* extras */
+  --color-border: #3f3f46;
+  --color-hover: #7c3aed;
+}
+.dark {
+  --color-bg: #242424;
+  --color-text: #ffffff;
+}
+.light {
+  --color-bg: #d4d4d4;
+  --color-text: #000000;
+}
