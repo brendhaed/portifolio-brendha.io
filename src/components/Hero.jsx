@@ -5,7 +5,7 @@ import vetor from "../assets/img/icons/vetor-hero.png";
 
 export function Hero() {
   return (
-    <>
+    <> 
       {/* Section inicio  */}
       <section
         id="inicio"
@@ -40,19 +40,19 @@ export function Hero() {
           {/* network */}
           <div className="flex justify-center gap-4 mt-8 ">
             <a
-              href={cv.contact[0].github}
+              href={cv.contact.github}
               className="bg-[#333333] px-5 py-5 rounded-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)]"
             >
               <FaGithub className="text-white md:text-2xl" />
             </a>
             <a
-              href={cv.contact[0].linkedin}
+              href={cv.contact.linkedin}
               className="bg-[#333333] px-5 py-5 rounded-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)]"
             >
               <FaLinkedin className="text-white md:text-2xl" />
             </a>
             <a
-              href={cv.contact[0].email}
+              href={cv.contact.email}
               className="bg-[#333333] px-5 py-5 rounded-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)]"
             >
               <FaEnvelope className="text-white md:text-2xl" />

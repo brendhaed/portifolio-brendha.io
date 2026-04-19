@@ -13,17 +13,17 @@
     "Figma"
   ],
   "about": {
-  "title": "Sou uma desenvolvedora de software em busca da minha primeira oportunidade de trabalho.",
-  "description": "Sou uma pessoa dedicada, apaixonada por tecnologia e sempre em busca de aprender e crescer profissionalmente. Tenho experiência prática em projetos pessoais e acadêmicos, onde desenvolvi habilidades sólidas em desenvolvimento front-end, especialmente com React. Estou ansiosa para aplicar meus conhecimentos e contribuir para o sucesso de uma equipe de desenvolvimento, enquanto continuo a expandir minhas habilidades e conhecimentos na área de tecnologia."
-},
-  "contact": [
-    {
-        "github": "https://github.com/brendhaed",
-        "linkedin": "https://www.linkedin.com/in/brendhaed/",
-        "email": "brendhaed@outlook.com",
-        "phone": "(55) 99104-9932"
-    }
-  ],
+    "title": "Sou uma desenvolvedora de software em busca da minha primeira oportunidade de trabalho.",
+    "description": "Sou uma pessoa dedicada, apaixonada por tecnologia e sempre em busca de aprender e crescer profissionalmente. Tenho experiência prática em projetos pessoais e acadêmicos, onde desenvolvi habilidades sólidas em desenvolvimento front-end, especialmente com React. Estou ansiosa para aplicar meus conhecimentos e contribuir para o sucesso de uma equipe de desenvolvimento, enquanto continuo a expandir minhas habilidades e conhecimentos na área de tecnologia.",
+    "imageProfile": "assets/img/foto-perfil/foto-perfil.png",
+    "curriculoDownload": "assets/curriculo/curriculo-brendha-rodrigues.pdf"
+  },
+  "contact": {
+    "github": "https://github.com/brendhaed",
+    "linkedin": "https://www.linkedin.com/in/brendhaed/",
+    "email": "brendhaed@outlook.com",
+    "phone": "(55) 99104-9932"
+  },
   "projects": [
     {
       "name": "Projeto de sistema web - Minimercado",
@@ -31,7 +31,8 @@
       "data": "Maio 2025 - Junho 2025",
       "techs": ["HTML", "CSS", "JavaScript"],
       "link": "https://brendhaed.github.io/sistema-web-minimercado/",
-      "repository": "https://github.com/brendhaed/sistema-web-minimercado"
+      "repository": "https://github.com/brendhaed/sistema-web-minimercado",
+      "image": "assets/img/projects/meu-projeto-1.png"
     },
     {
       "name": "Projeto Landing Page Escola Tech",
@@ -39,7 +40,8 @@
       "data": "Setembro 2025 - Outubro 2025",
       "techs": ["Next.js", "Tailwind", "Figma"],
       "link": "https://landing-page-school-tech.vercel.app/",
-      "repository": "https://github.com/brendhaed/landing-page-schoolTech"
+      "repository": "https://github.com/brendhaed/landing-page-schoolTech",
+      "image": "assets/img/projects/meu-projeto-2.png"
     },
     {
       "name": "Projeto CRUD de Séries",
@@ -47,7 +49,8 @@
       "data": "Novembro 2025 - Janeiro 2026",
       "techs": ["Next.js", "Tailwind"],
       "link": "https://crud-series-next.vercel.app/",
-      "repository": "https://github.com/brendhaed/crud-series-next"
+      "repository": "https://github.com/brendhaed/crud-series-next",
+      "image": "assets/img/projects/meu-projeto-3.png"
     }
   ],
   "experiences": [
@@ -60,7 +63,7 @@
   "education": [
     {
       "course": "Análise e Desenvolvimento de Sistemas",
-      "institution": "Pontifícia Universidade Católica do Rio Grande do Sul(PUC-RS)",
+      "institution": "Pontifícia Universidade Católica do Rio Grande do Sul (PUC-RS)",
       "period": "2024 - 2027",
       "situation": "Cursando 3º semestre"
     },

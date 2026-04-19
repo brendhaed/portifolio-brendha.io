@@ -1,3 +1,4 @@
+import cv from "../data/cv.json";
 import { useState, useEffect} from 'react';
 import imgPerfil from '../assets/img/foto-perfil/foto-perfil.png';
 import emailjs from "@emailjs/browser";
@@ -76,14 +77,14 @@ export function Contact() {
 
       <p className="text-sm text-gray-300 mb-4">
         Estou sempre disponível para um bate-papo. Mande-me um e-mail para  
-        <a href="mailto:brendhaed@outlook.com" className=" text-[#FFD67D] hover:underline"> brendhaed@outlook.com </a> 
+        <a href="mailto:brendhaed@outlook.com" className=" text-[#FFD67D] hover:underline"> {cv.contact.email} </a> 
         ou me avise nas redes sociais. 
       </p>
 
       <div className="flex justify-center md:justify-start gap-4 mt-4">
-        <a href="https://github.com/brendhaed"><i className="fab fa-github text-white text-xl hover:text-purple-400"></i></a>
-        <a href="https://www.linkedin.com/in/brendhaed/"><i className="fab fa-linkedin text-white text-xl hover:text-purple-400"></i></a>
-        <a href="#"><i className="fab fa-instagram text-white text-xl hover:text-purple-400"></i></a>
+        <a href={cv.contact.github}><i className="fab fa-github text-white text-xl hover:text-purple-400"></i></a>
+        <a href={cv.contact.linkedin}><i className="fab fa-linkedin text-white text-xl hover:text-purple-400"></i></a>
+        
       </div>
     </div>
 

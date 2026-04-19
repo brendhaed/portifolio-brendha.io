@@ -1,9 +1,5 @@
 import cv from "../data/cv.json";
 import { GoArrowUpRight } from "react-icons/go";
-import projeto1Img from "../assets/img/projects/meu-projeto-1.png";
-import projeto2Img from "../assets/img/projects/meu-projeto-2.png";
-import projeto3Img from "../assets/img/projects/meu-projeto-3.png";
-import projeto4Img from "../assets/img/projects/meu-projeto-4.png";
 import { MdLayers } from "react-icons/md";
 import {
   FaBootstrap,
@@ -30,7 +26,7 @@ export function Projects() {
         <div className="bg-[#030712] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
           <div className="relative mb-4">
             <img
-              src={projeto1Img}
+              src={cv.projects[0].image}
               alt="Foto projeto 1"
               className="rounded w-full"
             />
@@ -70,7 +66,7 @@ export function Projects() {
         <div className="bg-[#030712] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
           <div className="relative mb-4">
             <img
-              src={projeto3Img}
+              src={cv.projects[1].image}
               alt="Foto projeto 2"
               className="rounded w-full"
             />
@@ -110,7 +106,7 @@ export function Projects() {
         <div className="bg-[#030712] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
           <div className="relative mb-4">
             <img
-              src={projeto4Img}
+              src={cv.projects[2].image}
               alt="Foto projeto 4"
               className="rounded w-full"
             />
