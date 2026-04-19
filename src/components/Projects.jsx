@@ -23,7 +23,7 @@ export function Projects() {
 
       <div className="grid gap-10 md:grid-cols-3 justify-items-center">
         {/* Card 1  */}
-        <div className="bg-[#030712] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
+        <div className="bg-[#1a1a1a] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
           <div className="relative mb-4">
             <img
               src={cv.projects[0].image}
@@ -63,7 +63,7 @@ export function Projects() {
         </div>
         
         {/* Card 2  */}
-        <div className="bg-[#030712] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
+        <div className="bg-[#1a1a1a] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
           <div className="relative mb-4">
             <img
               src={cv.projects[1].image}
@@ -103,7 +103,7 @@ export function Projects() {
         </div>
 
         {/* Card 3  */}
-        <div className="bg-[#030712] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
+        <div className="bg-[#1a1a1a] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105">
           <div className="relative mb-4">
             <img
               src={cv.projects[2].image}

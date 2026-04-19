@@ -21,7 +21,7 @@ export function Header() {
   
   return (
     <>
-      <header className="fixed top-0 w-full z-50 flex justify-center md:justify-between items-center px-8 py-2 bg-[#242424]">
+      <header className="fixed top-0 w-full z-50 flex justify-center md:justify-between items-center px-8 py-2 bg-[#1a1a1a]">
         <div>
           <img src={imgLogo} alt="Logo" className="h-20 md:h-25" />
         </div>
