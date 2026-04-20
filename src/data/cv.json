@@ -38,7 +38,7 @@
       "name": "Projeto Landing Page Escola Tech",
       "description": "Projeto de uma landing page para a Escola Tech.",
       "data": "Setembro 2025 - Outubro 2025",
-      "techs": ["Next.js", "Tailwind", "Figma"],
+      "techs": ["Next.js", "Tailwind"],
       "link": "https://landing-page-school-tech.vercel.app/",
       "repository": "https://github.com/brendhaed/landing-page-schoolTech",
       "image": "assets/img/projects/meu-projeto-2.png"
@@ -47,7 +47,7 @@
       "name": "Projeto CRUD de Séries",
       "description": "Projeto que desenvolvi na Disciplina de Desenvolvimento Front-end",
       "data": "Novembro 2025 - Janeiro 2026",
-      "techs": ["Next.js", "Tailwind"],
+      "techs": ["Next.js", "MaterialUI"],
       "link": "https://crud-series-next.vercel.app/",
       "repository": "https://github.com/brendhaed/crud-series-next",
       "image": "assets/img/projects/meu-projeto-3.png"
