@@ -1,4 +1,4 @@
-import './App.css'
+import { useState, useEffect } from 'react'
 import { About } from './components/About'
 import { Contact } from './components/Contact'
 import { Education } from './components/Education'
@@ -9,9 +9,20 @@ import { Hero } from './components/Hero'
 import { Projects } from './components/Projects'
 
 function App() {
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
+
   return (
     <>
-      <Header/>
+     <div className="min-h-screen bg-white dark:bg-[#242424] text-black dark:text-white">
+      <Header theme={theme} toggleTheme={toggleTheme} />
       <Hero/>
       <About/>
       <Education/>
@@ -19,6 +30,7 @@ function App() {
       <Projects/>
       <Contact/>
       <Footer/>
+    </div>
     </>
   )
 }

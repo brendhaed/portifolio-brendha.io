@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen overflow-hidden bg-[#242424] flex flex-col mt-15 items-center justify-center px-8 md:px-20 py-32"
+      className="relative min-h-screen overflow-hidden bg-white dark:bg-[#242424] text-black dark:text-white flex flex-col mt-20 items-center justify-center px-8 md:px-20 py-32"
     >
       {/* Partículas */}
       <div className="absolute inset-0 w-full h-full blur-[1px]">
@@ -21,15 +21,13 @@ export function Hero() {
       {/* Conteúdo */}
       <div className="max-w-xl text-center relative z-10">
         <h2
-          className="text-4xl md:text-5xl font-bold mb-4 
-          bg-linear-to-r from-purple-400 to-purple-600 
-          bg-clip-text text-transparent"
+          className="text-black dark:text-purple-400 text-4xl md:text-5xl font-bold mb-4"
         >
           {cv.name}
         </h2>
 
         <h3 className="text-white text-lg font-semibold mb-3">{cv.title}</h3>
-        <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+        <p className="text-black dark:text-gray-400 mb-8 text-sm leading-relaxed">
           {cv.summary}
         </p>
 
@@ -38,7 +36,7 @@ export function Hero() {
           <a
             href={cv.about.curriculoDownload}
             download
-            className="text-white px-2 py-2 border border-white rounded-lg text-sm hover:bg-white hover:text-black transition md:px-5"
+            className="text-black dark:text-white px-2 py-2 border border-black dark:border-white rounded-lg text-sm hover:bg-white hover:text-black transition md:px-5"
           >
             Currículo
           </a>
@@ -56,26 +54,26 @@ export function Hero() {
     
           <a
             href={cv.contact.github}
-            className="bg-[#242424] p-4 rounded-full 
+            className="bg-white dark:bg-[#242424] p-4 rounded-full 
               hover:shadow-[0_0_15px_rgba(168,85,247,0.7)] transition"
           >
-            <FaGithub className="text-white text-xl" />
+            <FaGithub className="text-black dark:text-white text-xl" />
           </a>
 
           <a
             href={cv.contact.linkedin}
-            className="bg-[#242424] p-4 rounded-full 
+            className="bg-white dark:bg-[#242424] p-4 rounded-full 
               hover:shadow-[0_0_15px_rgba(168,85,247,0.7)] transition"
           >
-            <FaLinkedin className="text-white text-xl" />
+            <FaLinkedin className="text-black dark:text-white text-xl" />
           </a>
 
           <a
             href={cv.contact.email}
-            className="bg-[#242424] p-4 rounded-full 
+            className="bg-white dark:bg-[#242424] p-4 rounded-full 
               hover:shadow-[0_0_15px_rgba(168,85,247,0.7)] transition"
           >
-            <FaEnvelope className="text-white text-xl" />
+            <FaEnvelope className="text-black dark:text-white text-xl" />
           </a>
         </div>
       </div>

@@ -69,7 +69,7 @@ export function Contact() {
   return (
     <section
       id="contato"
-      className="bg-[#242424] rounded-2xl px-6 md:px-12 py-12 mx-6 md:mx-20 mt-10 text-white"
+      className="bg-white dark:bg-[#242424] rounded-2xl px-6 md:px-12 py-12 mx-6 md:mx-20 mt-10 text-black dark:text-white"
     >
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         <div className="md:w-1/2 text-center md:text-left">
@@ -79,16 +79,16 @@ export function Contact() {
             className="w-24 h-24 mx-auto md:mx-0 rounded-full border-4 border-white mb-4"
           />
 
-          <h4 className="text-sm text-[#FFD67D] mb-1">Contato</h4>
-          <h2 className="text-xl font-semibold mb-4">
+          <h4 className="text-sm text-[#f7b831] dark:text-[#FFD67D] mb-1">Contato</h4>
+          <h2 className="text-black dark:text-gray-300 xl font-semibold mb-4">
             Gostou do meu trabalho? Entre em contato!
           </h2>
 
-          <p className="text-sm text-gray-300 mb-4">
+          <p className="text-black dark:text-gray-300 text-sm mb-4">
             Estou sempre disponível para um bate-papo. Mande-me um e-mail para
             <a
               href="mailto:brendhaed@outlook.com"
-              className=" text-[#FFD67D] hover:underline"
+              className="text-[#f7b831] dark:text-[#FFD67D] hover:underline"
             >
               {" "}
               {cv.contact.email}{" "}
@@ -121,7 +121,7 @@ export function Contact() {
               id="name"
               value={contactForm.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-[#2F2F2F] border border-transparent rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-black dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             />
             <input
@@ -131,7 +131,7 @@ export function Contact() {
               id="email"
               value={contactForm.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-[#2F2F2F] border border-transparent rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-black dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             />
             <input
@@ -141,7 +141,7 @@ export function Contact() {
               id="subject"
               value={contactForm.subject}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-[#2F2F2F] border border-transparent rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-black dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             />
             <textarea
@@ -151,7 +151,7 @@ export function Contact() {
               id="message"
               value={contactForm.message}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-[#2F2F2F] border border-transparent rounded text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-black dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             ></textarea>
 

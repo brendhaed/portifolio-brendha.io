@@ -27,10 +27,10 @@ export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section id="projetos" className="px-8 md:px-20 py-16 bg-[#242424]">
+    <section id="projetos" className="px-8 md:px-20 py-16 bg-white dark:bg-[#242424]">
       <div className="w-full text-center mb-12">
-        <h3 className="text-[#FFD67D] tracking-wide text-sm mb-2">Projetos</h3>
-        <h1 className="text-3xl md:text-4xl font-bold text-white">
+        <h3 className="text-[#f7b831] dark:text-[#FFD67D] tracking-wide text-sm mb-2">Projetos</h3>
+        <h1 className="text-3xl md:text-4xl font-bold text-black dark:text-white">
           Dê uma olha nos meus projetos
         </h1>
       </div>
@@ -39,7 +39,7 @@ export function Projects() {
         {/* Cards  */}
         {cv.projects.map((project, index) => (
           <div
-            className="bg-[#1a1a1a] cursor-pointer rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105"
+            className="bg-gray-100 dark:bg-[#1a1a1a] cursor-pointer rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105"
             key={index}
           >
             <div className="relative mb-4">
@@ -52,21 +52,21 @@ export function Projects() {
                 href={project.repository}
                 target="_blank"
                 onClick={(e) => e.stopPropagation()}
-                className="absolute top-2 right-2 bg-[#2b1e42]/80 w-10 h-10 flex items-center justify-center rounded-full text-purple-300 text-xl hover:text-purple-400 transition"
+                className="absolute top-2 right-2 bg-[#8978bdc2] dark:bg-[#2b1e42]/80 w-10 h-10 flex items-center justify-center rounded-full text-purple-300 text-xl hover:text-purple-400 transition"
               >
                 <FaGithub className="text-white" />
               </a>
             </div>
-            <p className="text-white text-sm mb-1">{project.data}</p>
-            <h2 className="text-white text-xl font-semibold mb-2">
+            <p className="text-black dark:text-gray-300 text-sm mb-1">{project.data}</p>
+            <h2 className="text-black dark:text-white text-xl font-semibold mb-2">
               {project.name}
             </h2>
             
-            <p className="text-sm text-gray-400 mb-4 ">
+            <p className="text-sm text-black dark:text-gray-400 mb-4 ">
               {project.description}...
               <button
                 onClick={() => setSelectedProject(project)}
-                className="text-purple-400 ml-1 cursor-pointer hover:underline"
+                className="text-purple-700 dark:text-purple-400 ml-1 cursor-pointer hover:underline"
               >
                 ver mais
               </button>
@@ -76,13 +76,13 @@ export function Projects() {
                 href={project.link}
                 target="_blank"
                 onClick={(e) => e.stopPropagation()}
-                className="text-purple-400 text-sm hover:underline transition"
+                className="text-purple-700 dark:text-purple-400 text-sm hover:underline transition"
               >
                 Ver projeto no ar{" "}
                 <GoArrowUpRight className="inline-block ml-1" />
               </a>
             </div>
-            <div className="flex gap-3 justify-center text-purple-300 text-xl">
+            <div className="flex gap-3 justify-center text-purple-700 dark:text-purple-300 text-xl">
               {project.techs.map((tech, i) => (
                 <span key={i}>{techIcons[tech] || tech}</span>
               ))}
@@ -98,12 +98,12 @@ export function Projects() {
       >
         {selectedProject && (
           <>
-            <p className="text-xs text-purple-400 mb-1">Detalhes</p>
+            <p className="text-xs text-purple-700 dark:text-purple-400 mb-1">Detalhes</p>
             <img src={selectedProject.image} className="rounded mb-4" />
 
-            <h2 className="text-2xl font-bold mb-2">{selectedProject.name}</h2>
+            <h2 className="text-gray-700 dark:text-white 2xl font-bold mb-2">{selectedProject.name}</h2>
 
-            <p className="text-gray-400 mb-4">
+            <p className="text-black dark:text-gray-400 mb-4">
               {selectedProject.descriptionModal}
             </p>
 
@@ -112,7 +112,7 @@ export function Projects() {
               {selectedProject.techs.map((tech, i) => (
                 <span
                   key={i}
-                  className="bg-purple-500/20 px-2 py-1 rounded text-sm"
+                  className="text-black dark:text-white bg-purple-500/20 px-2 py-1 rounded text-sm"
                 >
                   {tech}
                 </span>
@@ -124,7 +124,7 @@ export function Projects() {
               <a
                 href={selectedProject.link}
                 target="_blank"
-                className="text-purple-400 hover:underline"
+                className="text-purple-700 dark:text-purple-400 hover:underline"
               >
                 Ver projeto <GoArrowUpRight className="inline ml-1" />
               </a>
@@ -132,7 +132,7 @@ export function Projects() {
               <a
                 href={selectedProject.repository}
                 target="_blank"
-                className="text-gray-400 hover:text-white"
+                className="text-black dark:text-gray-400 hover:text-white"
               >
                 <FaGithub />
               </a>

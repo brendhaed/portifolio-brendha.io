@@ -3,18 +3,10 @@ import imgLogo from "../assets/img/icons/logo-nome.png";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-export function Header() {
-  //theme
-  const [theme, setTheme] = useState("dark");
-  const [lightColor, setlightColor] = useState("white");
-  const [darkColor, setDarkColor] = useState("black");
+export function Header({ theme, toggleTheme }) {
 
   //menu
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
@@ -22,12 +14,12 @@ export function Header() {
 
   return (
     <>
-      <header className="bg-[#1a1a1a] fixed top-0 w-full z-50 px-6 py-2">
+      <header className="bg-gray-200 dark:bg-[#1a1a1a] text-black dark:text-white fixed top-0 w-full z-50 px-6 py-2">
         {/* mobile */}
         <div className="flex items-center justify-between md:hidden">
           {/* menu mobile */}
           <button
-            className="text-white text-2xl"
+            className="text-black dark:text-white text-2xl"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
@@ -37,7 +29,7 @@ export function Header() {
           <img src={imgLogo} alt="Logo" className="h-16" />
 
           {/* theme mobile */}
-          <button onClick={toggleTheme} className="text-white text-2xl cursor-pointer">
+          <button onClick={toggleTheme} className="text-black dark:text-white text-2xl cursor-pointer">
             {theme === "light" ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
           </button>
         </div>
@@ -46,7 +38,7 @@ export function Header() {
         <div className="hidden md:flex items-center justify-between">
           <img src={imgLogo} alt="Logo" className="h-20" />
 
-          <nav className="flex space-x-6 text-sm text-white">
+          <nav className="flex space-x-6 text-sm text-black dark:text-white">
             <a href="#inicio" className="hover:text-purple-400">
               Home
             </a>
@@ -67,7 +59,7 @@ export function Header() {
             </a>
           </nav>
 
-          <button onClick={toggleTheme} className="text-white text-2xl cursor-pointer">
+          <button onClick={toggleTheme} className="text-black dark:text-white text-2xl cursor-pointer">
             {theme === "light" ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
           </button>
         </div>
@@ -83,7 +75,7 @@ export function Header() {
 
       {/* menu mobile */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#1b1325] shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden 
+        className={`fixed top-0 right-0 h-full w-64 bg-purple-900 dark:bg-[#1b1325] shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden 
         ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex justify-between items-center p-6 border-b border-purple-500">

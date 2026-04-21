@@ -14,7 +14,7 @@ export function About() {
     <>
       <section
         id="sobre"
-        className="bg-[#242424] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white"
+        className="bg-white dark:bg-[#242424] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white"
       >
         <div className="w-full md:w-1/2 flex justify-center">
           <img
@@ -26,7 +26,7 @@ export function About() {
 
         <div className="w-full md:w-1/2">
           {/* Tecnologias  */}
-          <div className="flex gap-3 text-purple-300 text-xl mb-4">
+          <div className="flex gap-3 text-purple-600 dark:text-purple-400 text-xl mb-4">
             <FaHtml5 />
             <FaCss3Alt />
             <FaBootstrap />
@@ -38,12 +38,12 @@ export function About() {
             <i className="fa-brands fa-python"></i>
           </div>
 
-          <h3 className="text-[#FFD67D] text-sm mb-10">Sobre mim</h3>
-          <h2 className="text-xl md:text-2xl font-bold mb-4">
+          <h3 className="text-[#f7b831] dark:text-[#FFD67D] text-sm mb-10">Sobre mim</h3>
+          <h2 className="text-black dark:text-white text-xl md:text-2xl font-bold mb-4">
             {cv.about.title}
           </h2>
 
-          <p className="text-sm text-gray-300 leading-relaxed mb-6">
+          <p className="text-sm text-black dark:text-gray-300 leading-relaxed mb-6">
             {cv.about.description}
           </p>
 
