@@ -15,7 +15,7 @@ export function Hero() {
 
       {/* Glow de fundo */}
       <div className="absolute inset-0 -z-10 
-bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.25),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(76,29,149,0.25),black)]"
+       bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.25),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(76,29,149,0.25),black)]"
       />
 
       {/* Conteúdo */}
@@ -29,7 +29,6 @@ bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.25),transparent_40%),rad
         </h2>
 
         <h3 className="text-white text-lg font-semibold mb-3">{cv.title}</h3>
-
         <p className="text-gray-400 mb-8 text-sm leading-relaxed">
           {cv.summary}
         </p>
@@ -39,14 +38,14 @@ bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.25),transparent_40%),rad
           <a
             href={cv.about.curriculoDownload}
             download
-            className="text-white px-6 py-2 border border-white rounded-lg text-sm hover:bg-white hover:text-black transition"
+            className="text-white px-2 py-2 border border-white rounded-lg text-sm hover:bg-white hover:text-black transition md:px-5"
           >
             Currículo
           </a>
 
           <a
             href="#contato"
-            className="px-6 py-2 bg-[#7f5af0] text-white rounded-lg text-sm hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transition"
+            className="px-4 py-2 bg-[#7f5af0] text-white rounded-lg text-sm hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transition md:px-6"
           >
             Entrar em contato →
           </a>
@@ -54,6 +53,7 @@ bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.25),transparent_40%),rad
 
         {/* Redes */}
         <div className="flex justify-center gap-4 mt-8">
+    
           <a
             href={cv.contact.github}
             className="bg-[#242424] p-4 rounded-full 

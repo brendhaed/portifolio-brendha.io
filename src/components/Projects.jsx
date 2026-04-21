@@ -1,4 +1,5 @@
 import cv from "../data/cv.json";
+import { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { MdLayers } from "react-icons/md";
 import {
@@ -9,7 +10,9 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { Modal } from "./ModalProject";
 
+// icones das tecnologias usadas nos projetos
 export function Projects() {
   const techIcons = {
     HTML: <FaHtml5 />,
@@ -20,6 +23,9 @@ export function Projects() {
     Tailwind: <SiTailwindcss />,
     MaterialUI: <MdLayers />,
   };
+  // modal useState
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <section id="projetos" className="px-8 md:px-20 py-16 bg-[#242424]">
       <div className="w-full text-center mb-12">
@@ -29,11 +35,11 @@ export function Projects() {
         </h1>
       </div>
 
-      <div className="grid gap-10 md:grid-cols-3 justify-items-center">
+      <div className="grid gap-10 md:grid-cols-3">
         {/* Cards  */}
         {cv.projects.map((project, index) => (
           <div
-            className="bg-[#1a1a1a] rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105"
+            className="bg-[#1a1a1a] cursor-pointer rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105"
             key={index}
           >
             <div className="relative mb-4">
@@ -45,6 +51,7 @@ export function Projects() {
               <a
                 href={project.repository}
                 target="_blank"
+                onClick={(e) => e.stopPropagation()}
                 className="absolute top-2 right-2 bg-[#2b1e42]/80 w-10 h-10 flex items-center justify-center rounded-full text-purple-300 text-xl hover:text-purple-400 transition"
               >
                 <FaGithub className="text-white" />
@@ -54,11 +61,21 @@ export function Projects() {
             <h2 className="text-white text-xl font-semibold mb-2">
               {project.name}
             </h2>
-            <p className="text-sm text-gray-400 mb-4">{project.description}</p>
+            
+            <p className="text-sm text-gray-400 mb-4 ">
+              {project.description}...
+              <button
+                onClick={() => setSelectedProject(project)}
+                className="text-purple-400 ml-1 cursor-pointer hover:underline"
+              >
+                ver mais
+              </button>
+            </p>
             <div className="text-center mb-4">
               <a
                 href={project.link}
                 target="_blank"
+                onClick={(e) => e.stopPropagation()}
                 className="text-purple-400 text-sm hover:underline transition"
               >
                 Ver projeto no ar{" "}
@@ -73,6 +90,56 @@ export function Projects() {
           </div>
         ))}
       </div>
+
+      {/* modal */}
+      <Modal
+        isOpen={!!selectedProject}
+        onClose={() => setSelectedProject(null)}
+      >
+        {selectedProject && (
+          <>
+            <p className="text-xs text-purple-400 mb-1">Detalhes</p>
+            <img src={selectedProject.image} className="rounded mb-4" />
+
+            <h2 className="text-2xl font-bold mb-2">{selectedProject.name}</h2>
+
+            <p className="text-gray-400 mb-4">
+              {selectedProject.descriptionModal}
+            </p>
+
+            {/* Techs */}
+            <div className="flex flex-wrap gap-2 mb-4">
+              {selectedProject.techs.map((tech, i) => (
+                <span
+                  key={i}
+                  className="bg-purple-500/20 px-2 py-1 rounded text-sm"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Links */}
+            <div className="flex gap-4">
+              <a
+                href={selectedProject.link}
+                target="_blank"
+                className="text-purple-400 hover:underline"
+              >
+                Ver projeto <GoArrowUpRight className="inline ml-1" />
+              </a>
+
+              <a
+                href={selectedProject.repository}
+                target="_blank"
+                className="text-gray-400 hover:text-white"
+              >
+                <FaGithub />
+              </a>
+            </div>
+          </>
+        )}
+      </Modal>
     </section>
   );
 }

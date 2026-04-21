@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-16 gap-12">
       <p className="text-sm text-gray-300 mb-4">
-        &copy;Brendha Rodrigues 2025.
+        &copy; Brendha Rodrigues 2026.
       </p>
       <div className="flex gap-4">
         <a

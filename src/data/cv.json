@@ -32,7 +32,8 @@
       "techs": ["HTML", "CSS", "JavaScript"],
       "link": "https://brendhaed.github.io/sistema-web-minimercado/",
       "repository": "https://github.com/brendhaed/sistema-web-minimercado",
-      "image": "assets/img/projects/meu-projeto-1.png"
+      "image": "assets/img/projects/meu-projeto-1.png",
+      "descriptionModal": "Projeto de um sistema web para um minimercado, onde os usuários podem realizar cadastros de produtos, clientes e vendas. O sistema possui uma interface simples e intuitiva, permitindo que os usuários possam gerenciar o estoque, registrar vendas e visualizar relatórios de vendas. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript, com foco na criação de uma experiência de usuário agradável e funcional."
     },
     {
       "name": "Projeto Landing Page Escola Tech",
@@ -41,7 +42,8 @@
       "techs": ["Next.js", "Tailwind"],
       "link": "https://landing-page-school-tech.vercel.app/",
       "repository": "https://github.com/brendhaed/landing-page-schoolTech",
-      "image": "assets/img/projects/meu-projeto-2.png"
+      "image": "assets/img/projects/meu-projeto-2.png",
+      "descriptionModal": "Projeto de uma landing page para a Escola Tech, onde os usuários podem conhecer os cursos oferecidos, acessar informações sobre a instituição e se inscrever nos cursos. A landing page foi desenvolvida utilizando Next.js e Tailwind CSS, com foco na criação de uma interface moderna, responsiva e atraente, visando proporcionar uma experiência de usuário agradável e incentivar a inscrição nos cursos oferecidos pela Escola Tech."
     },
     {
       "name": "Projeto CRUD de Séries",
@@ -50,7 +52,8 @@
       "techs": ["Next.js", "MaterialUI"],
       "link": "https://crud-series-next.vercel.app/",
       "repository": "https://github.com/brendhaed/crud-series-next",
-      "image": "assets/img/projects/meu-projeto-3.png"
+      "image": "assets/img/projects/meu-projeto-3.png",
+      "descriptionModal": "Projeto de um sistema CRUD (Create, Read, Update, Delete) para gerenciamento de séries, onde os usuários podem adicionar, visualizar, editar e excluir informações sobre suas séries favoritas. O sistema foi desenvolvido utilizando Next.js e Material UI, com foco na criação de uma interface moderna e responsiva, proporcionando uma experiência de usuário agradável e funcional para o gerenciamento eficiente das séries."
     }
   ],
   "experiences": [
