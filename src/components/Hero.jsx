@@ -20,9 +20,7 @@ export function Hero() {
 
       {/* Conteúdo */}
       <div className="max-w-xl text-center relative z-10">
-        <h2
-          className="text-black dark:text-purple-400 text-4xl md:text-5xl font-bold mb-4"
-        >
+        <h2 className="text-black dark:text-purple-400 text-4xl md:text-5xl font-bold mb-4">
           {cv.name}
         </h2>
 
@@ -54,7 +52,7 @@ export function Hero() {
     
           <a
             href={cv.contact.github}
-            className="bg-white dark:bg-[#242424] p-4 rounded-full 
+            className="bg-gray-200 dark:bg-[#1a1a1a] p-4 rounded-full 
               hover:shadow-[0_0_15px_rgba(168,85,247,0.7)] transition"
           >
             <FaGithub className="text-black dark:text-white text-xl" />
@@ -62,7 +60,7 @@ export function Hero() {
 
           <a
             href={cv.contact.linkedin}
-            className="bg-white dark:bg-[#242424] p-4 rounded-full 
+            className="bg-gray-200 dark:bg-[#1a1a1a] p-4 rounded-full 
               hover:shadow-[0_0_15px_rgba(168,85,247,0.7)] transition"
           >
             <FaLinkedin className="text-black dark:text-white text-xl" />
@@ -70,7 +68,7 @@ export function Hero() {
 
           <a
             href={cv.contact.email}
-            className="bg-white dark:bg-[#242424] p-4 rounded-full 
+            className="bg-gray-200 dark:bg-[#1a1a1a] p-4 rounded-full 
               hover:shadow-[0_0_15px_rgba(168,85,247,0.7)] transition"
           >
             <FaEnvelope className="text-black dark:text-white text-xl" />

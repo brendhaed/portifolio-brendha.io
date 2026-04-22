@@ -4,7 +4,6 @@ import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export function Header({ theme, toggleTheme }) {
-
   //menu
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -12,9 +11,35 @@ export function Header({ theme, toggleTheme }) {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
 
+  // header nav
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    if (window.innerWidth < 768) return;
+
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <header className="bg-gray-200 dark:bg-[#1a1a1a] text-black dark:text-white fixed top-0 w-full z-50 px-6 py-2">
+      <header className="backdrop-blur-md bg-gray-100/80 dark:bg-black/50 border-b border-black/10 dark:border-white/10 fixed top-0 w-full z-50 px-6 py-2">
         {/* mobile */}
         <div className="flex items-center justify-between md:hidden">
           {/* menu mobile */}
@@ -29,7 +54,10 @@ export function Header({ theme, toggleTheme }) {
           <img src={imgLogo} alt="Logo" className="h-16" />
 
           {/* theme mobile */}
-          <button onClick={toggleTheme} className="text-black dark:text-white text-2xl cursor-pointer">
+          <button
+            onClick={toggleTheme}
+            className="text-black dark:text-white text-2xl cursor-pointer"
+          >
             {theme === "light" ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
           </button>
         </div>
@@ -39,27 +67,48 @@ export function Header({ theme, toggleTheme }) {
           <img src={imgLogo} alt="Logo" className="h-20" />
 
           <nav className="flex space-x-6 text-sm text-black dark:text-white">
-            <a href="#inicio" className="hover:text-purple-400">
+            <a
+              href="#inicio"
+              className={`hover:text-purple-400 ${activeSection === "inicio" ? "text-purple-700 dark:text-purple-400" : ""}`}
+            >
               Home
             </a>
-            <a href="#sobre" className="hover:text-purple-400">
+            <a
+              href="#sobre"
+              className={`hover:text-purple-400 ${activeSection === "sobre" ? "text-purple-700 dark:text-purple-400" : ""}`}
+            >
               Sobre
             </a>
-            <a href="#educacao" className="hover:text-purple-400">
+            <a
+              href="#educacao"
+              className={`hover:text-purple-400 ${activeSection === "educacao" ? "text-purple-700 dark:text-purple-400" : ""}`}
+            >
               Educação
             </a>
-            <a href="#experiencias" className="hover:text-purple-400">
+            <a
+              href="#experiencias"
+              className={`hover:text-purple-400 ${activeSection === "experiencias" ? "text-purple-700 dark:text-purple-400" : ""}`}
+            >
               Experiências
             </a>
-            <a href="#projetos" className="hover:text-purple-400">
+            <a
+              href="#projetos"
+              className={`hover:text-purple-400 ${activeSection === "projetos" ? "text-purple-700 dark:text-purple-400" : ""}`}
+            >
               Projetos
             </a>
-            <a href="#contato" className="hover:text-purple-400">
+            <a
+              href="#contato"
+              className={`hover:text-purple-400 ${activeSection === "contato" ? "text-purple-700 dark:text-purple-400" : ""}`}
+            >
               Contato
             </a>
           </nav>
 
-          <button onClick={toggleTheme} className="text-black dark:text-white text-2xl cursor-pointer">
+          <button
+            onClick={toggleTheme}
+            className="text-black dark:text-white text-2xl cursor-pointer"
+          >
             {theme === "light" ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
           </button>
         </div>

@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-     <div className="min-h-screen bg-white dark:bg-[#242424] text-black dark:text-white">
+     <div className="min-h-screen dark:bg-[#242424] text-black dark:text-white">
       <Header theme={theme} toggleTheme={toggleTheme} />
       <Hero/>
       <About/>

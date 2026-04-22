@@ -101,7 +101,7 @@ export function Projects() {
             <p className="text-xs text-purple-700 dark:text-purple-400 mb-1">Detalhes</p>
             <img src={selectedProject.image} className="rounded mb-4" />
 
-            <h2 className="text-gray-700 dark:text-white 2xl font-bold mb-2">{selectedProject.name}</h2>
+            <h2 className="text-black dark:text-white text-2xl font-bold mb-2">{selectedProject.name}</h2>
 
             <p className="text-black dark:text-gray-400 mb-4">
               {selectedProject.descriptionModal}
@@ -132,7 +132,7 @@ export function Projects() {
               <a
                 href={selectedProject.repository}
                 target="_blank"
-                className="text-black dark:text-gray-400 hover:text-white"
+                className="text-black dark:text-gray-400 hover:text-purple-700 dark:hover:text-purple-400"
               >
                 <FaGithub />
               </a>

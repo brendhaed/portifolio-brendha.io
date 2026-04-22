@@ -10,7 +10,7 @@ export function Experiences() {
         {/* Itens  */}
         <div className="mb-10 ml-6">
           <div className="absolute w-4 h-4 bg-purple-600 rounded-full mt-1.5 -left-2 border border-white"></div>
-          <h3 className="text-lg font-semibold text-white">
+          <h3 className="text-lg font-semibold text-black dark:text-white">
             {cv.experiences[0].role}
           </h3>
           <span className="block mb-2 text-sm font-medium text-gray-800 dark:text-white">

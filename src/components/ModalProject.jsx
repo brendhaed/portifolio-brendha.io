@@ -30,7 +30,7 @@ export function Modal({ isOpen, onClose, children }) {
       />
 
       {/* Conteúdo */}
-      <div className="relative bg-gray-200 dark:bg-[#1a1a1a] text-white rounded-xl p-6 max-w-lg w-full shadow-lg animate-fadeIn">
+      <div className="relative bg-gray-100 dark:bg-[#1a1a1a] text-white rounded-xl p-6 max-w-lg w-full shadow-lg animate-fadeIn">
         {/* Botão fechar */}
         <button
           onClick={onClose}
