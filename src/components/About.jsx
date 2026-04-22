@@ -39,7 +39,7 @@ export function About() {
 
         <div className="w-full md:w-1/2">
           {/* Tecnologias  */}
-          <div className="flex gap-3 text-purple-600 dark:text-purple-400 text-xl mb-4">
+          <div className="flex gap-3 text-purple-600 dark:text-purple-400 text-xl mb-4 ">
             <FaHtml5 />
             <FaCss3Alt />
             <FaBootstrap />
@@ -51,7 +51,7 @@ export function About() {
             <i className="fa-brands fa-python"></i>
           </div>
 
-          <h3 className="text-[#f7b831] dark:text-[#FFD67D] text-sm mb-10">
+          <h3 className="text-[#f7b831] dark:text-[#FFD67D] text-sm mb-2 text-center md:text-left">
             Sobre mim
           </h3>
           <h2 className="text-black dark:text-white text-xl md:text-2xl font-bold mb-4">
@@ -62,7 +62,7 @@ export function About() {
             {cv.about.description}
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center"> 
             <a
               href={cv.about.curriculoDownload}
               download

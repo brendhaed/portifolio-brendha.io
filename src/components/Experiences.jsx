@@ -6,8 +6,8 @@ export function Experiences() {
       <h1 className="text-[#f7b831] dark:text-[#FFD67D] text-sm mb-10 text-center w-full">
         Experiências
       </h1>
+      {/* Itens  */}
       <div className="relative border-l-4 border-purple-600 ml-4">
-        {/* Itens  */}
         <div className="mb-10 ml-6">
           <div className="absolute w-4 h-4 bg-purple-600 rounded-full mt-1.5 -left-2 border border-white"></div>
           <h3 className="text-lg font-semibold text-black dark:text-white">
@@ -20,7 +20,21 @@ export function Experiences() {
             {cv.experiences[0].description}
           </p>
         </div>
+
+        {/* Tecnologias usadas */}
+      <div className="flex flex-wrap gap-4 justify-center md:justify-start md:m-5">
+        {cv.experiences[0].techs.map((tech, index) => (
+          <span
+            key={index}
+            className="text-black dark:text-white bg-purple-500/20 px-2 py-1 rounded text-xs"
+          >
+            {tech}
+          </span>
+        ))}
       </div>
+      </div>
+
+      
     </section>
   );
 }

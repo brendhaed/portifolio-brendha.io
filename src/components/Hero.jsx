@@ -24,7 +24,7 @@ export function Hero() {
           {cv.name}
         </h2>
 
-        <h3 className="text-white text-lg font-semibold mb-3">{cv.title}</h3>
+        <h3 className="text-black dark:text-white text-lg font-semibold mb-3">{cv.title}</h3>
         <p className="text-black dark:text-gray-400 mb-8 text-sm leading-relaxed">
           {cv.summary}
         </p>

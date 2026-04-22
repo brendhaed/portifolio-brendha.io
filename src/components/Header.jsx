@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import imgLogo from "../assets/img/icons/logo-nome.png";
+import imgLogoDark from "../assets/img/icons/logo-nome-dark.png";
+import imgLogoLight from "../assets/img/icons/logo-nome-light.png";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -51,7 +52,8 @@ export function Header({ theme, toggleTheme }) {
           </button>
 
           {/* logo mobile */}
-          <img src={imgLogo} alt="Logo" className="h-16" />
+          <img src={theme === "dark" ? imgLogoDark : imgLogoLight}
+          alt="Logo" className="h-16" />
 
           {/* theme mobile */}
           <button
@@ -64,42 +66,43 @@ export function Header({ theme, toggleTheme }) {
 
         {/* desktop */}
         <div className="hidden md:flex items-center justify-between">
-          <img src={imgLogo} alt="Logo" className="h-20" />
+          <img src={theme === "dark" ? imgLogoDark : imgLogoLight}
+          alt="Logo" className="h-16" />
 
           <nav className="flex space-x-6 text-sm text-black dark:text-white">
             <a
               href="#inicio"
-              className={`hover:text-purple-400 ${activeSection === "inicio" ? "text-purple-700 dark:text-purple-400" : ""}`}
+              className={`hover:text-purple-400 ${activeSection === "inicio" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
             >
               Home
             </a>
             <a
               href="#sobre"
-              className={`hover:text-purple-400 ${activeSection === "sobre" ? "text-purple-700 dark:text-purple-400" : ""}`}
+              className={`hover:text-purple-400 ${activeSection === "sobre" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
             >
               Sobre
             </a>
             <a
               href="#educacao"
-              className={`hover:text-purple-400 ${activeSection === "educacao" ? "text-purple-700 dark:text-purple-400" : ""}`}
+              className={`hover:text-purple-400 ${activeSection === "educacao" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
             >
               Educação
             </a>
             <a
               href="#experiencias"
-              className={`hover:text-purple-400 ${activeSection === "experiencias" ? "text-purple-700 dark:text-purple-400" : ""}`}
+              className={`hover:text-purple-400 ${activeSection === "experiencias" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
             >
               Experiências
             </a>
             <a
               href="#projetos"
-              className={`hover:text-purple-400 ${activeSection === "projetos" ? "text-purple-700 dark:text-purple-400" : ""}`}
+              className={`hover:text-purple-400 ${activeSection === "projetos" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
             >
               Projetos
             </a>
             <a
               href="#contato"
-              className={`hover:text-purple-400 ${activeSection === "contato" ? "text-purple-700 dark:text-purple-400" : ""}`}
+              className={`hover:text-purple-400 ${activeSection === "contato" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
             >
               Contato
             </a>
@@ -124,7 +127,7 @@ export function Header({ theme, toggleTheme }) {
 
       {/* menu mobile */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-purple-900 dark:bg-[#1b1325] shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden 
+        className={`fixed top-0 right-0 h-full w-64 bg-[#7f5af0] dark:bg-[#1b1325] shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden 
         ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex justify-between items-center p-6 border-b border-purple-500">

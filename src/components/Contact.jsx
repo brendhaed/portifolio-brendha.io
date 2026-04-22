@@ -29,7 +29,7 @@ export function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    const serviceId = "service_6cq0i3b";
+    const serviceId = "service_xkxrdcp";
     const templateId = "template_aa2h0in";
 
     emailjs
@@ -39,8 +39,9 @@ export function Contact() {
           text: "Mensagem enviada com sucesso!",
           duration: 3000,
           style: {
-            background: "#8a2be2",
+            background: "#7f5af0",
             color: "#f4f4f4",
+            fontSize: window.innerWidth < 768 ? "12px" : "14px",
           },
         }).showToast();
 
@@ -58,6 +59,7 @@ export function Contact() {
           style: {
             background: "#dc3545",
             color: "#f4f4f4",
+            fontSize: window.innerWidth < 768 ? "12px" : "14px",
           },
         }).showToast();
       })

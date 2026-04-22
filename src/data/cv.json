@@ -60,7 +60,8 @@
     {
       "role": "Estagiaria de TI",
       "period": "Mar/2022 - Set/2022",
-      "description": "Estágio obrigatório do curso de Técnico em Informática. Onde realizei o desenvolvimento e manutenção de consultas SQL, com foco na otimização de buscas e melhoria de desempenho em banco de dados PostgreSQL.Suporte na modelagem de dados, criação de procedures, views e rotinas automatizadas. Análise e resolução de problemas relacionados à integridade e performance do banco de dados."
+      "description": "Estágio obrigatório do curso de Técnico em Informática. Onde realizei o desenvolvimento e manutenção de consultas SQL, com foco na otimização de buscas e melhoria de desempenho em banco de dados PostgreSQL.Suporte na modelagem de dados, criação de procedures, views e rotinas automatizadas. Análise e resolução de problemas relacionados à integridade e performance do banco de dados.",
+      "techs": ["SQL", "PostgreSQL", "Modelagem de Dados"]
     }
   ],
   "education": [
