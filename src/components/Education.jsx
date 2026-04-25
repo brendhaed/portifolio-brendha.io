@@ -5,6 +5,8 @@ export function Education() {
     <section
       id="educacao"
       className="bg-white dark:bg-[#242424] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 text-black dark:text-white"
+      data-aos="fade-up"
+      data-aos-duration="1000"
     >
       {/* Título */}
       <div className="text-center mb-12">

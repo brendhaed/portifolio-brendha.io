@@ -2,7 +2,7 @@ import cv from "../data/cv.json";
 
 export function Experiences() {
   return (
-    <section id="experiencias" className="max-w-3xl mx-auto p-8 ">
+    <section id="experiencias" className="max-w-3xl mx-auto p-8" data-aos="fade-up" data-aos-duration="1000">
       <h1 className="text-[#f7b831] dark:text-[#FFD67D] text-sm mb-10 text-center w-full">
         Experiências
       </h1>

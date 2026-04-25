@@ -7,8 +7,12 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Projects } from "./components/Projects";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function App() {
+  // Modo escuro e claro
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "dark";
   });
@@ -27,6 +31,14 @@ function App() {
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+
+  // AOS - Animate On Scroll
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // duração da animação
+      once: true, // anima só uma vez
+    });
+  }, []);
 
   return (
     <>

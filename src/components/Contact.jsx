@@ -72,6 +72,8 @@ export function Contact() {
     <section
       id="contato"
       className="bg-white dark:bg-[#242424] rounded-2xl px-6 md:px-12 py-12 mx-6 md:mx-20 mt-10 text-black dark:text-white"
+      data-aos="fade-up"
+      data-aos-duration="1000"
     >
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         <div className="md:w-1/2 text-center md:text-left">

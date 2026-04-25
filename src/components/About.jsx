@@ -15,7 +15,9 @@ export function About() {
       <section
         id="sobre"
         className="bg-white dark:bg-[#242424] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white"
-      >
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        >
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative">
             {/* Glow foto */}
