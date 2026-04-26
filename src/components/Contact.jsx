@@ -4,6 +4,7 @@ import imgPerfil from "../assets/img/foto-perfil/foto-perfil.png";
 import emailjs from "@emailjs/browser";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 export function Contact() {
   const [contactForm, setContactForm] = useState({
@@ -97,8 +98,17 @@ export function Contact() {
               {" "}
               {cv.contact.email}{" "}
             </a>
-            ou me avise nas redes sociais.
+            ou me chame no WhatsApp!
           </p>
+          <a
+          href="https://wa.me/5555991049932?text=Oi%20Brendha,%20vi%20seu%20portfólio%20e%20gostaria%20de%20falar%20com%20você!"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#7f5af0] hover:bg-purple-500 text-white py-2 px-4 rounded flex items-center justify-center gap-2"
+        >
+          <FaWhatsapp />
+          Me chamar no WhatsApp
+          </a>
 
           <div className="flex justify-center md:justify-start gap-4 mt-4">
             <a href={cv.contact.github}>

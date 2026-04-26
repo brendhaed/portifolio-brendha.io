@@ -8,6 +8,7 @@ export function Skills() {
   return (
     <section
       className="flex flex-col items-center py-20 gap-10 "
+      id="skills"
       data-aos="fade-up"
       data-aos-duration="1000">
       <h1 className="text-2xl font-bold mb-6 ">Skills</h1>

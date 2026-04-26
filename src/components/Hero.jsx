@@ -20,11 +20,11 @@ export function Hero() {
 
       {/* Conteúdo */}
       <div className="max-w-xl text-center relative z-10">
-        <h2 className="text-black dark:text-purple-400 text-4xl md:text-5xl font-bold mb-4">
+        <h2 className="text-gray-800 dark:text-purple-400 text-4xl md:text-5xl font-bold mb-4">
           {cv.name}
         </h2>
 
-        <h3 className="text-black dark:text-white text-lg font-semibold mb-3">{cv.title}</h3>
+        <h3 className="text-purple-700 dark:text-white text-lg font-semibold mb-3">{cv.title}</h3>
         <p className="text-black dark:text-gray-400 mb-8 text-sm leading-relaxed">
           {cv.summary}
         </p>

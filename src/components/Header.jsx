@@ -89,6 +89,12 @@ export function Header({ theme, toggleTheme }) {
               Educação
             </a>
             <a
+              href="#skills"
+              className={`hover:text-purple-400 ${activeSection === "skills" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
+            >
+              Skills
+            </a>
+            <a
               href="#experiencias"
               className={`hover:text-purple-400 ${activeSection === "experiencias" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
             >
@@ -150,6 +156,9 @@ export function Header({ theme, toggleTheme }) {
           </a>
           <a href="#educacao" onClick={() => setMenuOpen(false)}>
             Educação
+          </a>
+          <a href="#skills" onClick={() => setMenuOpen(false)}>
+            Skills
           </a>
           <a href="#experiencias" onClick={() => setMenuOpen(false)}>
             Experiências
