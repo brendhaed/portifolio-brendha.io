@@ -1,4 +1,5 @@
 import cv from "../data/cv.json";
+import { FaGraduationCap, FaSchool } from "react-icons/fa";
 
 export function Education() {
   return (
@@ -34,11 +35,13 @@ export function Education() {
 
             {/* Instituição */}
             <p className="text-sm text-black dark:text-gray-400 mb-3">
+              <FaSchool className="inline mr-2 text-purple-500" />
               {edu.institution}
             </p>
 
             {/* Período */}
             <p className="text-xs text-black dark:text-gray-500 mb-4">
+              <FaGraduationCap className="inline mr-2 text-purple-500" />
               {edu.period}
             </p>
 

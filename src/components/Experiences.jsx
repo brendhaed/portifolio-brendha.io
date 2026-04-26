@@ -1,3 +1,4 @@
+import { FaCalendarDays } from "react-icons/fa6";
 import cv from "../data/cv.json";
 
 export function Experiences() {
@@ -14,7 +15,8 @@ export function Experiences() {
             {cv.experiences[0].role}
           </h3>
           <span className="block mb-2 text-sm font-medium text-gray-800 dark:text-white">
-            {cv.experiences[0].period}
+            <FaCalendarDays className="inline mr-1 text-purple-500" />
+            {cv.experiences[0].period} 
           </span>
           <p className="text-sm text-black dark:text-gray-300">
             {cv.experiences[0].description}
