@@ -34,7 +34,7 @@ export function Hero() {
           <a
             href={cv.about.curriculoDownload}
             download
-            className="text-black dark:text-white px-2 py-2 border border-black dark:border-white rounded-lg text-sm hover:bg-white hover:text-black transition md:px-5"
+            className="text-black dark:text-white px-2 py-2 border border-black dark:border-white rounded-lg text-sm  md:px-5"
           >
             Currículo
           </a>

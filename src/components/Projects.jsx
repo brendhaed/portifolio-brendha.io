@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { Modal } from "./ModalProject";
+import { FaCalendarDays } from "react-icons/fa6";
 
 // icones das tecnologias usadas nos projetos
 export function Projects() {
@@ -29,20 +30,27 @@ export function Projects() {
   return (
     <section id="projetos" className="px-8 md:px-20 py-16 bg-white dark:bg-[#242424]" >
       <div className="w-full text-center mb-12">
-        <h3 className="text-[#f7b831] dark:text-[#FFD67D] tracking-wide text-sm mb-2">Projetos</h3>
-        <h1 className="text-3xl md:text-4xl font-bold text-black dark:text-white">
+        <h3 className="text-[#d97706] dark:text-[#FFD67D] tracking-wide text-base mb-2">Projetos</h3>
+        <h1 className="text-2xl md:text-4xl font-bold text-black dark:text-white">
           Dê uma olha nos meus projetos
         </h1>
       </div>
 
-      <div className="grid gap-10 md:grid-cols-3" data-aos="fade-right" data-aos-duration="1000">
+        <div className={`grid gap-6 md:gap-6 justify-items-center max-w-5xl mx-auto
+          ${cv.projects.length <= 2
+            ? "grid-cols-1 sm:grid-cols-2"
+            : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+          }`}
+          data-aos="fade-right"
+          data-aos-duration="1000"
+      >
         {/* Cards  */}
         {cv.projects.map((project, index) => (
           <div
             className="bg-gray-100 dark:bg-[#1a1a1a] cursor-pointer rounded-xl shadow-md p-6 max-w-sm w-full hover:shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] transform transition duration-300 hover:scale-105"
             key={index}
-            
           >
+            
             <div className="relative mb-4">
               <img
                 src={project.image}
@@ -58,7 +66,7 @@ export function Projects() {
                 <FaGithub className="text-white" />
               </a>
             </div>
-            <p className="text-black dark:text-gray-300 text-sm mb-1">{project.data}</p>
+            <p className="text-black dark:text-gray-300 text-sm mb-1"><FaCalendarDays className="inline mr-1 text-purple-500" />{project.data}</p>
             <h2 className="text-black dark:text-white text-xl font-semibold mb-2">
               {project.name}
             </h2>
@@ -77,7 +85,7 @@ export function Projects() {
                 href={project.link}
                 target="_blank"
                 onClick={(e) => e.stopPropagation()}
-                className="text-purple-700 dark:text-purple-400 text-sm hover:underline transition"
+                className="text-purple-700 dark:text-purple-400 text-sm"
               >
                 Ver projeto no ar{" "}
                 <GoArrowUpRight className="inline-block ml-1" />

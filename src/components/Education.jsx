@@ -11,7 +11,7 @@ export function Education() {
     >
       {/* Título */}
       <div className="text-center mb-12">
-        <h2 className="text-[#f7b831] dark:text-[#FFD67D] text-sm mb-2 ">
+        <h2 className="text-[#d97706] dark:text-[#FFD67D] text-base mb-2 ">
           Formação
         </h2>
         <h1 className="text-2xl font-bold text-black dark:text-white">

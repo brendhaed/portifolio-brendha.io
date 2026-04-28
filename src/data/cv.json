@@ -18,7 +18,7 @@
     "Resolução de problemas",
     "Adaptabilidade",
     "Aprendizado contínuo"
-  ],
+  ], 
   "about": {
     "title": "Desenvolvedora Front-End em formação, em busca de oportunidades para aplicar meus conhecimentos e crescer profissionalmente." ,
     "description": "Sou uma pessoa dedicada, apaixonada por tecnologia e sempre em busca de aprender e crescer profissionalmente. Tenho experiência prática em projetos pessoais e acadêmicos, onde desenvolvi habilidades sólidas em desenvolvimento front-end, especialmente com React. Estou ansiosa para aplicar meus conhecimentos e contribuir para o sucesso de uma equipe de desenvolvimento, enquanto continuo a expandir minhas habilidades e conhecimentos na área de tecnologia.",
@@ -29,7 +29,8 @@
     "github": "https://github.com/brendhaed",
     "linkedin": "https://www.linkedin.com/in/brendhaed/",
     "email": "brendhaed@outlook.com",
-    "phone": "(55) 99104-9932"
+    "phone": "(55) 99104-9932",
+    "whatsapp": "5555991049932"
   },
   "projects": [
     {

@@ -83,16 +83,16 @@ export function Header({ theme, toggleTheme }) {
               Sobre
             </a>
             <a
-              href="#educacao"
-              className={`hover:text-purple-400 ${activeSection === "educacao" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
-            >
-              Educação
-            </a>
-            <a
               href="#skills"
               className={`hover:text-purple-400 ${activeSection === "skills" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
             >
               Skills
+            </a>
+            <a
+              href="#educacao"
+              className={`hover:text-purple-400 ${activeSection === "educacao" ? "text-purple-700 dark:text-purple-400 font-semibold" : ""}`}
+            >
+              Educação
             </a>
             <a
               href="#experiencias"
@@ -145,7 +145,7 @@ export function Header({ theme, toggleTheme }) {
           >
             <FaTimes />
           </button>
-        </div>
+        </div> 
 
         <nav className="flex flex-col space-y-4 p-6 text-white text-sm">
           <a href="#inicio" onClick={() => setMenuOpen(false)}>
@@ -154,11 +154,11 @@ export function Header({ theme, toggleTheme }) {
           <a href="#sobre" onClick={() => setMenuOpen(false)}>
             Sobre
           </a>
-          <a href="#educacao" onClick={() => setMenuOpen(false)}>
-            Educação
-          </a>
           <a href="#skills" onClick={() => setMenuOpen(false)}>
             Skills
+          </a>
+          <a href="#educacao" onClick={() => setMenuOpen(false)}>
+            Educação
           </a>
           <a href="#experiencias" onClick={() => setMenuOpen(false)}>
             Experiências

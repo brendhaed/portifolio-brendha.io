@@ -1,85 +1,48 @@
-import { useState } from "react";
-import { FaChevronCircleDown, FaChevronCircleUp } from "react-icons/fa";
-import cv from "../data/cv.json";
+import { useMemo } from "react";
+import { useGithubLanguages } from "../hooks/useGithubLanguages";
+import { FaGithub } from "react-icons/fa";
+import { SkillBar } from "./SkillBar";
 
 export function Skills() {
-  const [openHard, setOpenHard] = useState(false);
-  const [openSoft, setOpenSoft] = useState(false);
+  const languages = useGithubLanguages("brendhaed");
+  const total = useMemo(
+    () => Object.values(languages).reduce((acc, value) => acc + value, 0) || 1,
+    [languages],
+  );
+
+  const sorted = useMemo(
+    () =>
+      Object.entries(languages)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 6),
+    [languages],
+  );
+
   return (
     <section
-      className="flex flex-col items-center py-20 gap-10 "
       id="skills"
+      className="bg-white dark:bg-[#242424] p-10 mb-8 flex flex-col gap-4 items-center"
       data-aos="fade-up"
-      data-aos-duration="1000">
-      <h1 className="text-2xl font-bold mb-6 ">Skills</h1>
-      <div className="flex flex-col gap-3 w-full max-w-xl ">
-        {/* hard skills */}
-        <div
-          className={`
-            flex items-center justify-between mx-10 md:mx-0 p-3 rounded-lg transition
-            ${openHard ? "bg-purple-500/20 border border-purple-400" : "bg-transparent"}
-            `}>
-          <h2 className="text-lg font-semibold">Hard Skills</h2>
-          <button onClick={() => setOpenHard(!openHard)}>
-            {openHard ? <FaChevronCircleUp /> : <FaChevronCircleDown />}
-          </button>
-        </div>
+      data-aos-duration="1000"
+    >
+      <h2 className="text-base md:text-xl font-semibold flex items-center gap-2 text-gray-800 dark:text-white">
+        <FaGithub className="text-purple-700 dark:text-purple-500" />
+        Tecnologias mais usadas
+      </h2>
 
-        {openHard && (
-          <ul className="flex flex-wrap gap-3 mx-12 md:mx-0">
-            {cv.skills.map((skill, index) => (
-              <li
-                key={index}
-                className="
-                px-3 py-1
-                rounded-full
-                border border-purple-400/50 
-                bg-purple-500/10 
-                hover:bg-purple-500/20
-                text-sm
-                transition
-              "
-              >
-                {skill}
-              </li>
-            ))}
-          </ul>
-        )}
+      <div className="space-y-4 w-full max-w-6xl">
+        {sorted.map(([lang, count], index) => {
+          const percent = ((count / total) * 100).toFixed(0);
 
-        {/* Soft Skills */}
-        <div
-          className={`
-          flex items-center justify-between mx-10 md:mx-0 p-3 rounded-lg
-          transition
-          ${openSoft ? "bg-purple-500/20 border border-purple-400" : "bg-transparent"}
-        `}>
-          <h2 className="text-lg font-semibold">Soft Skills</h2>
-
-          <button onClick={() => setOpenSoft(!openSoft)}>
-            {openSoft ? <FaChevronCircleUp /> : <FaChevronCircleDown />}
-          </button>
-        </div>
-
-        {openSoft && (
-          <ul className="flex flex-wrap gap-3 mx-12 md:mx-0">
-            {cv.softSkills.map((skill, index) => (
-              <li
-                key={index}
-                className="
-                px-3 py-1
-                rounded-full
-                border border-purple-400/50 
-                bg-purple-800/10 
-                dark:bg-purple-500/10
-                hover:bg-purple-500/20
-                text-sm
-                transition"
-              >
-                {skill}
-              </li>
-            ))}
-          </ul>
-        )}
+          return (
+            <SkillBar
+              key={lang}
+              lang={lang}
+              percent={Number(percent)}
+              delay={index * 100}
+            />
+          );
+        })}
       </div>
     </section>
   );

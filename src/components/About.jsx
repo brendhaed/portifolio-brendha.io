@@ -10,7 +10,7 @@ import {
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 export function About() {
-  return (
+  return ( 
     <>
       <section
         id="sobre"
@@ -53,10 +53,10 @@ export function About() {
             <i className="fa-brands fa-python"></i>
           </div>
 
-          <h3 className="text-[#f7b831] dark:text-[#FFD67D] text-sm mb-2 text-center md:text-left">
+          <h3 className="text-[#d97706] dark:text-[#FFD67D] text-base mb-2 text-center md:text-left">
             Sobre mim
           </h3>
-          <h2 className="text-black dark:text-white text-xl md:text-2xl font-bold mb-4">
+          <h2 className="text-black dark:text-white text-base mb-6 md:text-xl font-semibold">
             {cv.about.title}
           </h2>
 

@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail, MdPhone } from "react-icons/md";
 
 export function Contact() {
   const [contactForm, setContactForm] = useState({
@@ -83,33 +84,47 @@ export function Contact() {
             alt="Foto Perfil"
             className="w-24 h-24 mx-auto md:mx-0 rounded-full border-4 border-white mb-4"
           />
-
-          <h4 className="text-sm text-[#f7b831] dark:text-[#FFD67D] mb-1">Contato</h4>
+ 
+          <h4 className="text-sm text-[#d97706] dark:text-[#FFD67D] mb-1">
+            Contato
+          </h4>
           <h2 className="text-black dark:text-gray-300 xl font-semibold mb-4">
             Gostou do meu trabalho? Entre em contato!
           </h2>
 
-          <p className="text-black dark:text-gray-300 text-sm mb-4">
-            Estou sempre disponível para um bate-papo. Mande-me um e-mail para
+          {/* contact */}
+          <div className="flex flex-col gap-2">
             <a
-              href="mailto:brendhaed@outlook.com"
-              className="text-[#f7b831] dark:text-[#FFD67D] hover:underline"
+              href={`mailto:${cv.contact.email}`}
+              className="text-[#d97706] dark:text-[#FFD67D]"
             >
               {" "}
+              <MdEmail size={16} className="inline-block mb-1" />
               {cv.contact.email}{" "}
             </a>
-            ou me chame no WhatsApp!
-          </p>
+            <a
+              href={`tel:${cv.contact.phone}`}
+              className="text-[#d97706] dark:text-[#FFD67D] "
+            >
+              {" "}
+              <MdPhone size={16} className="inline-block mb-1" />
+              {cv.contact.phone}{" "}
+            </a>
+            <br />
+          </div>
+
+          {/* contato whatsapp */}
           <a
-          href="https://wa.me/5555991049932?text=Oi%20Brendha,%20vi%20seu%20portfólio%20e%20gostaria%20de%20falar%20com%20você!"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-[#7f5af0] hover:bg-purple-500 text-white py-2 px-4 rounded flex items-center justify-center gap-2"
-        >
-          <FaWhatsapp />
-          Me chamar no WhatsApp
+            href={`https://wa.me/${cv.contact.whatsapp}?text=Oi%20Brendha,%20vi%20seu%20portfólio%20e%20gostaria%20de%20falar%20com%20você!`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#7f5af0] hover:bg-purple-500 text-white py-1.5 px-3 rounded-md text-sm transition"
+          >
+            <FaWhatsapp size={16} />
+            Entre em contato
           </a>
 
+          {/* sociais */}
           <div className="flex justify-center md:justify-start gap-4 mt-4">
             <a href={cv.contact.github}>
               <i className="fab fa-github text-white text-xl hover:text-purple-400"></i>
@@ -135,7 +150,7 @@ export function Contact() {
               id="name"
               value={contactForm.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-black dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             />
             <input
@@ -145,7 +160,7 @@ export function Contact() {
               id="email"
               value={contactForm.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-black dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             />
             <input
@@ -155,7 +170,7 @@ export function Contact() {
               id="subject"
               value={contactForm.subject}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-black dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             />
             <textarea
@@ -165,7 +180,7 @@ export function Contact() {
               id="message"
               value={contactForm.message}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-black dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full px-4 py-2 bg-gray-200 dark:bg-[#2F2F2F] border border-transparent rounded placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             ></textarea>
 
