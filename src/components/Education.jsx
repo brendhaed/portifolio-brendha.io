@@ -14,7 +14,7 @@ export function Education() {
         <h2 className="text-[#d97706] dark:text-[#FFD67D] text-base mb-2 ">
           Formação
         </h2>
-        <h1 className="text-2xl font-bold text-black dark:text-white">
+        <h1 className="text-base md:text-2xl font-bold text-black dark:text-white">
           Formação acadêmica
         </h1>
       </div>
@@ -23,7 +23,7 @@ export function Education() {
       <div className="grid md:grid-cols-2 gap-8">
         {cv.education.map((edu, index) => (
           <div
-            key={index}
+            key={index} 
             className="bg-gray-100 dark:bg-[#1a1a1a] p-6 rounded-xl border border-transparent 
             hover:border-purple-500/40 transition duration-300 
             hover:shadow-[0_0_15px_rgba(168,85,247,0.3)]"

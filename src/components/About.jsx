@@ -14,39 +14,43 @@ export function About() {
     <>
       <section
         id="sobre"
-        className="bg-white dark:bg-[#242424] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white"
+        className="bg-white dark:bg-[#242424] rounded-2xl mx-5 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white"
         data-aos="fade-up"
         data-aos-duration="1000"
         >
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative">
             {/* Glow foto */}
-            <div className="absolute inset-0 rounded-full shadow-[0_0_15px_4px_rgba(192,132,252,0.6)] blur-xl opacity-20"></div>
+            <div className="absolute inset-0 rounded-full bg-purple-400 blur-2xl opacity-40"></div>
             <img
-              src={cv.about.imageProfile}
-              alt="Foto perfil"
-              className="
-              relative
-              w-[250px] h-[250px] md:w-44 md:h-44
-              rounded-full
-              object-cover
-              border-4 dark:border-white/10
-              border-purple-500
-              shadow-lg
-              transition-transform duration-300
-              hover:scale-105"
-            />
+            src={cv.about.imageProfile}
+            alt="Foto perfil"
+            className="
+            relative
+            w-36 h-36
+            sm:w-44 sm:h-44
+            md:w-52 md:h-52
+            lg:w-60 lg:h-60
+            rounded-full
+            object-cover
+            border-2
+            dark:border-white/10
+            border-purple-600
+            shadow-lg
+            transition-transform duration-300
+            hover:scale-105"
+          />
           </div>
         </div>
 
         <div className="w-full md:w-1/2">
           {/* Tecnologias  */}
-          <div className="flex gap-3 text-purple-600 dark:text-purple-400 text-xl mb-4 ">
+          <div className="flex gap-3 items-center justify-center text-purple-600 dark:text-purple-400 text-xl mb-4 md:justify-start">
             <FaHtml5 />
             <FaCss3Alt />
             <FaBootstrap />
             <SiTailwindcss />
-            <FaJs />
+            <FaJs/>
             <FaReact />
             <SiNextdotjs />
             <FaGitAlt />

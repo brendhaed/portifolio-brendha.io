@@ -31,7 +31,7 @@ export function Projects() {
     <section id="projetos" className="px-8 md:px-20 py-16 bg-white dark:bg-[#242424]" >
       <div className="w-full text-center mb-12">
         <h3 className="text-[#d97706] dark:text-[#FFD67D] tracking-wide text-base mb-2">Projetos</h3>
-        <h1 className="text-2xl md:text-4xl font-bold text-black dark:text-white">
+        <h1 className="text-base md:text-2xl font-bold text-black dark:text-white">
           Dê uma olha nos meus projetos
         </h1>
       </div>
@@ -89,7 +89,7 @@ export function Projects() {
               >
                 Ver projeto no ar{" "}
                 <GoArrowUpRight className="inline-block ml-1" />
-              </a>
+              </a> 
             </div>
             <div className="flex gap-3 justify-center text-purple-700 dark:text-purple-300 text-xl">
               {project.techs.map((tech, i) => (

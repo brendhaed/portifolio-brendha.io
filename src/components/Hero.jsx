@@ -19,22 +19,22 @@ export function Hero() {
       />
 
       {/* Conteúdo */}
-      <div className="max-w-xl text-center relative z-10">
+      <div className="max-w-xl text-center relative z-10 -mt-6 md:-mt-10">
         <h2 className="text-gray-800 dark:text-purple-400 text-4xl md:text-5xl font-bold mb-4">
           {cv.name}
         </h2>
 
-        <h3 className="text-purple-700 dark:text-white text-lg font-semibold mb-3">{cv.title}</h3>
+        <h3 className="text-purple-900 dark:text-white text-lg font-semibold mb-2">{cv.title}</h3>
         <p className="text-black dark:text-gray-400 mb-8 text-sm leading-relaxed">
           {cv.summary}
         </p>
 
         {/* Botões */}
-        <div className="flex justify-center gap-4 mb-6">
+        <div className="flex justify-center gap-3 mb-6 md:gap-5">
           <a
             href={cv.about.curriculoDownload}
             download
-            className="text-black dark:text-white px-2 py-2 border border-black dark:border-white rounded-lg text-sm  md:px-5"
+            className="text-black dark:text-white px-3 py-2 border border-black dark:border-white rounded-lg text-sm  md:px-5"
           >
             Currículo
           </a>

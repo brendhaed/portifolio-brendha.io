@@ -16,10 +16,10 @@ export default function ParticlesBackground() {
         particles: {
           number: { value: 50 },
           color: {
-            value: ["#a855f7", "#c084fc", "#ffffff"],
+            value: ["#7f5af0", "#774ea0", "#FFD67D"],
           },
           opacity: {
-            value: { min: 0.2, max: 0.6 },
+            value: { min: 0.4, max: 0.6 },
           },
           size: {
             value: { min: 1, max: 2.5 },
