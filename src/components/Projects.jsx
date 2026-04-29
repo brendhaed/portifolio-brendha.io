@@ -28,12 +28,12 @@ export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section id="projetos" className="px-8 md:px-20 py-16 bg-white dark:bg-[#242424]" >
+    <section id="projetos" className="px-8 md:px-20 py-16 bg-white dark:bg-[#242424]" data-aos="fade-right" data-aos-duration="2000">
       <div className="w-full text-center mb-12">
         <h3 className="text-[#d97706] dark:text-[#FFD67D] tracking-wide text-base mb-2">Projetos</h3>
         <h1 className="text-base md:text-2xl font-bold text-black dark:text-white">
           Dê uma olha nos meus projetos
-        </h1>
+        </h1> 
       </div>
 
         <div className={`grid gap-6 md:gap-6 justify-items-center max-w-5xl mx-auto
@@ -112,7 +112,7 @@ export function Projects() {
 
             <h2 className="text-black dark:text-white text-2xl font-bold mb-2">{selectedProject.name}</h2>
 
-            <p className="text-black dark:text-gray-400 mb-4">
+            <p className="text-gray-900 dark:text-gray-400 mb-4 text-base">
               {selectedProject.descriptionModal}
             </p>
 
@@ -129,7 +129,7 @@ export function Projects() {
             </div>
 
             {/* Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <a
                 href={selectedProject.link}
                 target="_blank"

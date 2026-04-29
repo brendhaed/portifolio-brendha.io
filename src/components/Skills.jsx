@@ -23,7 +23,7 @@ export function Skills() {
       id="skills"
       className="bg-white dark:bg-[#242424] p-10 mb-8 flex flex-col gap-4 items-center"
       data-aos="fade-up"
-      data-aos-duration="1000"
+      data-aos-duration="2000"
     >
       <h2 className="text-base md:text-xl font-semibold flex items-center gap-2 text-gray-800 dark:text-white">
         <FaGithub className="text-purple-700 dark:text-purple-500" />

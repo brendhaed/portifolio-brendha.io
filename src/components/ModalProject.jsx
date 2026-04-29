@@ -2,22 +2,7 @@ import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 
 export function Modal({ isOpen, onClose, children }) {
-  // Fecha com ESC
-  useEffect(() => {
-    function handleKeyDown(e) {
-      if (e.key === "Escape") onClose();
-    }
-
-    if (isOpen) {
-      document.addEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "hidden"; 
-    }
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "auto";
-    };
-  }, [isOpen, onClose]);
+ 
 
   if (!isOpen) return null;
 
@@ -30,7 +15,8 @@ export function Modal({ isOpen, onClose, children }) {
       />
 
       {/* Conteúdo */}
-      <div className="relative bg-gray-100 dark:bg-[#1a1a1a] text-white rounded-xl p-6 max-w-lg w-full shadow-lg animate-fadeIn">
+      <div className="relative bg-gray-100 dark:bg-[#1a1a1a] text-white rounded-xl p-8 max-w-lg md:max-w-xl w-full shadow-lg 
+      animate-fadeIn">
         {/* Botão fechar */}
         <button
           onClick={onClose}

@@ -67,7 +67,7 @@ export function Hero() {
           </a>
 
           <a
-            href={cv.contact.email}
+            href={`mailto:${cv.contact.email}`}
             className="bg-gray-200 dark:bg-[#1a1a1a] p-4 rounded-full 
               hover:shadow-[0_0_15px_rgba(168,85,247,0.7)] transition"
           >
