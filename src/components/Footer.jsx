@@ -1,9 +1,9 @@
 import cv from "../data/cv.json";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-export function Footer() {
+export function Footer() { 
   return (
-    <footer className="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-16 gap-12">
+    <footer className="bg-gray-100/80 dark:bg-[#1a1a1a] flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-16 gap-12">
       <p className="text-sm text-black dark:text-gray-300 mb-4">
         &copy; Brendha Rodrigues 2026.
       </p>

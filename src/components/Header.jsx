@@ -40,7 +40,7 @@ export function Header({ theme, toggleTheme }) {
 
   return (
     <>
-      <header className="backdrop-blur-md bg-gray-100/80 dark:bg-black/50 border-b border-black/10 dark:border-white/10 fixed top-0 w-full z-50 px-6 py-2">
+      <header className="backdrop-blur-md bg-gray-100/80 dark:bg-[#1a1a1a]/50 fixed top-0 w-full z-50 px-6 py-2">
         {/* mobile */}
         <div className="flex items-center justify-between md:hidden">
           {/* menu mobile */}
