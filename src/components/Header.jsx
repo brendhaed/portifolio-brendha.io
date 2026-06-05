@@ -12,31 +12,40 @@ export function Header({ theme, toggleTheme }) {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
 
-  // header nav
-  const [activeSection, setActiveSection] = useState("");
+// header nav
+const [activeSection, setActiveSection] = useState("");
 
-  useEffect(() => {
-    if (window.innerWidth < 768) return;
+useEffect(() => {
+  if (window.innerWidth < 768) return;
 
+  const handleScroll = () => {
     const sections = document.querySelectorAll("section");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.6,
-      },
-    );
+    let current = "";
 
-    sections.forEach((section) => observer.observe(section));
+    sections.forEach((section) => {
+      const top = section.offsetTop - 150;
+      const height = section.offsetHeight;
 
-    return () => observer.disconnect();
-  }, []);
+      if (
+        window.scrollY >= top &&
+        window.scrollY < top + height
+      ) {
+        current = section.id;
+      }
+    });
+
+    setActiveSection(current);
+  };
+
+  handleScroll();
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
 
   return (
     <>
